@@ -1,0 +1,61 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+
+
+.intro-section {
+    background: linear-gradient(45deg, $black, $brown), url("../../images/pp1-T.png");
+    opacity: 2;
+    padding: 13rem 0 5rem 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.intros{
+        
+    .video-box{
+        position: relative;
+
+        img{
+            max-width: auto;
+        }
+
+        a{
+            position: absolute;
+            top: 45%;
+            left: 48%;
+            transform: translate(-50%, -50%);
+
+            span{
+
+                i{
+                    font-size: 5rem;
+                    color: $black;
+
+                }
+            }
+            
+                
+        }
+       
+    }
+}
+
+.border-animation {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border: 0.70rem solid $white;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    animation: pulse-border 1.5s linear infinite;
+
+    &--border-1{
+        animation-delay: 1s;
+    }
+    &--border-2 {
+        animation-delay: 1.2s;
+    }
+}
